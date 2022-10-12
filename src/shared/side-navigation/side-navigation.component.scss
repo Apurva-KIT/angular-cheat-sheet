@@ -1,0 +1,33 @@
+@use '../../styles/colour';
+
+// .sidenav-container {
+//   height: 100%;
+// }
+
+.sidenav {
+  width: 300px;
+}
+
+// .sidenav .mat-toolbar {
+//   background: #0a1929;
+// }
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.side-navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+mat-sidenav {
+  width: 20rem;
+}

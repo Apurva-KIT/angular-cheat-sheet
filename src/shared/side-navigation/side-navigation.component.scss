@@ -29,5 +29,11 @@
 }
 
 mat-sidenav {
-  width: 20rem;
+  width: 15rem;
+  background-color: #3f51b5;
+  
+  mat-nav-list > a{
+    color: #fff;
+  }
 }
+

@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { RouterModule } from '@angular/router';
 
 const MaterialModules = [
   MatMenuModule,
@@ -37,12 +38,18 @@ const MaterialModules = [
 
 @NgModule({
   declarations: [NavbarComponent, SideNavigationComponent, DragDropComponent],
-  imports: [CommonModule, LayoutModule, DragDropModule, MaterialModules],
+  imports: [
+    CommonModule,
+    LayoutModule,
+    DragDropModule,
+    MaterialModules,
+    RouterModule,
+  ],
   exports: [
     NavbarComponent,
     SideNavigationComponent,
     DragDropComponent,
     MaterialModules,
-  ],  
+  ],
 })
 export class SharedModule {}

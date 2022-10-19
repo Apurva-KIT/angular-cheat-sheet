@@ -1,21 +1,7 @@
 @use '../../styles/colour';
 
-// .sidenav-container {
-//   height: 100%;
-// }
-
 .sidenav {
   width: 300px;
-}
-
-// .sidenav .mat-toolbar {
-//   background: #0a1929;
-// }
-
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: -1;
 }
 
 .side-navbar-wrapper {
@@ -30,10 +16,14 @@
 
 mat-sidenav {
   width: 15rem;
-  background-color: #3f51b5;
+  background-color: #2c3253;
   
   mat-nav-list > a{
     color: #fff;
   }
+}
+
+mat-sidenav-content{
+  height:100vh;
 }
 

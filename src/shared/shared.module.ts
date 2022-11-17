@@ -14,6 +14,12 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { RouterModule } from '@angular/router';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { GridComponent } from './grid/grid.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 const MaterialModules = [
   MatMenuModule,
@@ -34,21 +40,27 @@ const MaterialModules = [
   MatToolbarModule,
   MatIconModule,
   MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
 ];
 
 @NgModule({
-  declarations: [NavbarComponent, SideNavigationComponent, DragDropComponent],
+  declarations: [NavbarComponent, SideNavigationComponent, DragDropComponent, GridComponent],
   imports: [
     CommonModule,
     LayoutModule,
     DragDropModule,
     MaterialModules,
     RouterModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   exports: [
     NavbarComponent,
     SideNavigationComponent,
     DragDropComponent,
+    GridComponent,
     MaterialModules,
   ],
 })

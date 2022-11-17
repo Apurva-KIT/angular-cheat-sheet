@@ -9,11 +9,6 @@ import { SideNavbarService } from './side-navbar.service';
   styleUrls: ['./side-navigation.component.scss'],
 })
 export class SideNavigationComponent {
-  // isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-  //   .pipe(
-  //     map(result => result.matches),
-  //     shareReplay()
-  //   );
   @ViewChild('sidenav', { static: true }) sidenav!: MatSidenav;
 
   constructor(

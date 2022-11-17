@@ -1,9 +1,7 @@
+import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component, ViewChild } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
 import { MatSidenav } from '@angular/material/sidenav';
-import { SideNavbarService } from '../side-navbar.service';
+import { SideNavbarService } from './side-navbar.service';
 
 @Component({
   selector: 'app-side-navigation',

@@ -23,7 +23,8 @@
       "dom"
     ],
     "paths": {
-      "@shared/*": ["src/shared/*"]
+      "@shared/*": ["src/shared/*"],
+      "@auth/*": ["src/app/authentication/*"]
     }
   },
   "angularCompilerOptions": {

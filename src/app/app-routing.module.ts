@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginFormComponent } from './authentication/login/login-form/login-form.component';
-import { RegistrationFormComponent } from './authentication/register/registration-form/registration-form.component';
+import { LoginFormComponent } from '@auth/login/login-form/login-form.component';
+import { RegistrationFormComponent } from '@auth/register/registration-form/registration-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PageUnderConstructionComponent } from './page-under-construction/page-under-construction.component';

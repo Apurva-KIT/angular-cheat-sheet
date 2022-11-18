@@ -1,1 +1,59 @@
-<p>registration-form works!</p>
+<mat-card class="register-form-container">
+  <mat-card-title>Registration Form</mat-card-title>
+  <form [formGroup]="registerForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your first name</mat-label>
+      <input
+        matInput
+        placeholder="First Name"
+        formControlName="firstName"
+        required
+      />
+      <mat-error *ngIf="registerForm.controls['firstName'].errors"
+        >First Name is required</mat-error
+      > </mat-form-field
+    ><br />
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your last name</mat-label>
+      <input
+        matInput
+        placeholder="Last Name"
+        formControlName="lastName"
+        required
+      />
+      <mat-error *ngIf="registerForm.controls['lastName'].errors"
+        >Last Name is required</mat-error
+      > </mat-form-field
+    ><br />
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input
+        type="email"
+        matInput
+        placeholder="email address"
+        formControlName="email"
+        required
+      />
+      <mat-error *ngIf="registerForm.controls['email'].errors"
+        >Email must be valid</mat-error
+      > </mat-form-field
+    ><br />
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Password</mat-label>
+      <input
+        type="password"
+        matInput
+        placeholder="Enter Password"
+        formControlName="password"
+        required
+      />
+      <mat-error *ngIf="registerForm.controls['password'].errors"
+        >Password must be valid</mat-error
+      >
+    </mat-form-field>
+    <mat-card-actions>
+      <button mat-raised-button color="primary">Register</button>
+      <button mat-raised-button>Cancel</button>
+    </mat-card-actions>
+  </form>
+</mat-card>

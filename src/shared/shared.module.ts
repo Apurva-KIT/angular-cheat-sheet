@@ -21,6 +21,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
+//custom
+import { DynamicGridComponent } from './dynamic-grid/dynamic-grid.component';
+
 const MaterialModules = [
   MatMenuModule,
   MatToolbarModule,
@@ -45,7 +48,13 @@ const MaterialModules = [
 ];
 
 @NgModule({
-  declarations: [NavbarComponent, SideNavigationComponent, DragDropComponent, GridComponent],
+  declarations: [
+    NavbarComponent,
+    SideNavigationComponent,
+    DragDropComponent,
+    GridComponent,
+    DynamicGridComponent,
+  ],
   imports: [
     CommonModule,
     LayoutModule,
@@ -61,6 +70,7 @@ const MaterialModules = [
     SideNavigationComponent,
     DragDropComponent,
     GridComponent,
+    DynamicGridComponent,
     MaterialModules,
   ],
 })

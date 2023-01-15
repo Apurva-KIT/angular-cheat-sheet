@@ -1,7 +1,16 @@
 .full-width-table {
+  position: absolute;
   width: 100%;
 }
 
-.scroll{
-  min-height: 50em;
+.table-container {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
